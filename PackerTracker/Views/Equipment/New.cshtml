@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel Packing Tracker</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+
+<body>
+    <h1>Fill in the details on the items you'll need for your trip</h1>
+    <form action="/equipment" method="post">
+        <label for="itemName">Item Name</label>
+        <input id="itemName" name="itemName" type="text">
+        <label for="itemPrice">Item Price</label>
+        <input id="itemPrice" name="itemPrice" type="text">
+        <label for="itemMass">Item Mass</label>
+        <input id="itemMass" name="itemMass" type="text">
+        <label for="purchaseOrNot">Has this item been purchased?</label>
+        <input id="purchaseOrNot" name="purchaseOrNot" type="bool">
+        <label for="packedOrNot">Has this item been packed?</label>
+        <input id="packedOrNot" name="packedOrNot" type="bool">
+        <button type="submit">Add this piece of equipment to your packing list!</button>
+    </form>
+</body>
+
+</html>

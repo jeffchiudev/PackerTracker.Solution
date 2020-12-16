@@ -1,0 +1,16 @@
+@using PackerTracker.Models;
+
+<h1>Packing List</h1>
+
+@if (Model.Count == 0)
+{
+    <p>There are currently no items on your packing list.</p>
+}
+
+<ul>
+    @foreach (Equipment item in Model)
+    {
+        <li><a href="/equipment/@item.Id">@item.ItemName</a></li>
+    }
+</ul>
+<a href="/equipment/new">Add a new packing list.</a>
